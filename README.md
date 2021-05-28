@@ -1,1 +1,7 @@
-# Lab7_Geoparsing
+# Geoparsing :)   
+
+This code uses python 3 and various python libraries to analyze long text files for geographic relationships. In the coding tutorial, we list the top 20 mentions of cities from Mark Twain's "The Innocents Abroad." Then I take the reins and analyze "Antonia" by George Sand – a great book, but "My Antonia" by Willa Cather is better. There was a period when I read about a few different Antonia's. The package Nominatim is essential in this code because it takes the names of places and matches them to coordinates that to be mapped. We can end up seeing the books represented as a collection of locations instead of as a book. 
+Using Nominatim to geoparse a novel written in 1859 may have some difficulty. Countries have been created and destroyed since 1859, and cities renamed or spelled differently. Nominatim may not capture all of the nuances within a travel book from 1859, but it has done a pretty good job.
+An exciting city name was picked up, geocoded, and now a part of a list of locations for both books is the word "Of." This is suspicious and probably tags along from a line like "The city of Paris". We would only want Paris to pick up. In Antonia, the location – "Of" from "Of, Trabzon" was listed as a location instead of a more standard listing of Trabzon. We could iterate throughout our data frame and remove sticky words like "Of" – trying to formalize as best we can.   
+This tutorial uses a graduated color symbology of sorts, but it's informal. A graduated symbol, or color symbology that was binned and had a legend, is another alternative to our quick visualization we have made up here. 
+
